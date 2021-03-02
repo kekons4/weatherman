@@ -11,7 +11,7 @@ if (localStorage.getItem("history") !== null) {
 
 function getWeather(event) {
     event.preventDefault();
-    console.log("Test");
+    console.log(searchInput.val());
 }
 
 searchForm.on("submit", getWeather);
