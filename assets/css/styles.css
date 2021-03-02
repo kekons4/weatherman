@@ -1,17 +1,25 @@
+:root {
+    --dark-clr: rgb(37, 36, 36);
+    --body-clr: #efefef;
+    --light-text-clr: azure;
+    --blue-clr: rgb(46, 46, 243);
+}
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    background: #efefef;
+    background: var(--body-clr);
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
 header {
     display: block;
-    background-color: rgb(37, 36, 36);
-    color: azure;
+    background-color: var(--dark-clr);
+    color: var(--light-text-clr);
     padding: 5px;
     font-size: 30px;
     text-align: center;
@@ -26,7 +34,7 @@ main {
 main aside {
     /* border: 2px black solid; */
     padding: 20px;
-    background-color: #efefef;
+    background-color: var(--body-clr);
     text-align: center;
 }
 
@@ -42,12 +50,12 @@ main aside form input {
 }
 
 main aside form button {
-    color: azure;
+    color: var(--light-text-clr);
     font-size: 15px;
     font-weight: bolder;
     letter-spacing: 1px;
-    background-color: rgb(46, 46, 243);
-    border: 2px azure solid;
+    background-color: var(--blue-clr);
+    border: 2px var(--light-text-clr) solid;
     border-radius: 5px;
     padding: 10px;
 }
@@ -127,8 +135,8 @@ main section .card {
     flex-wrap: nowrap;
     border: 2px grey solid;
     border-radius: 5px;
-    background-color: rgb(46, 46, 243);
-    color: azure;
+    background-color: var(--blue-clr);
+    color: var(--light-text-clr);
     padding: 10px;
     margin-right: 15px;
 }
@@ -142,4 +150,14 @@ main section .card span {
     font-size: 15px;
     letter-spacing: 1px;
     padding: 5px;
+}
+
+footer {
+    position: absolute;
+    background-color: var(--dark-clr);
+    color: var(--light-text-clr);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
 }
