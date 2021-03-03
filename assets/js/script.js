@@ -5,7 +5,7 @@ var resultsEl = $("#results");
 var historyEl = $("#history");
 
 // API URL parameters and base url
-var APIKEY = "eaa68d3df89c0a3c155a63bf91e7807d";
+var APIKEY = ${{secrets.API_KEY}};
 var cnt = "5";
 var units = "imperial";
 var apiBaseUrl = "http://api.openweathermap.org/data/2.5/forecast?q=";
