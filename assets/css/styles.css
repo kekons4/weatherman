@@ -1,163 +1,166 @@
 :root {
-    --dark-clr: rgb(37, 36, 36);
-    --body-clr: #efefef;
-    --light-text-clr: azure;
-    --blue-clr: rgb(46, 46, 243);
+  --dark-clr: rgb(37, 36, 36);
+  --body-clr: #efefef;
+  --light-text-clr: azure;
+  --blue-clr: rgb(46, 46, 243);
 }
 
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background: var(--body-clr);
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
+  background: var(--body-clr);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 header {
-    display: block;
-    background-color: var(--dark-clr);
-    color: var(--light-text-clr);
-    padding: 5px;
-    font-size: 30px;
-    text-align: center;
+  display: block;
+  background-color: var(--dark-clr);
+  color: var(--light-text-clr);
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
 }
 
 main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 main aside {
-    /* border: 2px black solid; */
-    padding: 20px;
-    background-color: var(--body-clr);
-    text-align: center;
+  /* border: 2px black solid; */
+  padding: 20px;
+  background-color: var(--body-clr);
+  text-align: center;
 }
 
 main aside h2 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 main aside form input {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 2px grey solid;
-    border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px grey solid;
+  border-radius: 5px;
 }
 
 main aside form button {
-    color: var(--light-text-clr);
-    font-size: 15px;
-    font-weight: bolder;
-    letter-spacing: 1px;
-    background-color: var(--blue-clr);
-    border: 2px var(--light-text-clr) solid;
-    border-radius: 5px;
-    padding: 10px;
+  color: var(--light-text-clr);
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  background-color: var(--blue-clr);
+  border: 2px var(--light-text-clr) solid;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 main aside form button:hover {
-    background-color: rgb(114, 114, 241);
+  background-color: rgb(114, 114, 241);
 }
 
 main aside .history {
-    border: 2px lightgray solid;
-    border-radius: 5px;
-    background-color: white;
-    margin-top: 20px;
+  border: 2px lightgray solid;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 20px;
 }
 
 main aside .history div {
-    margin: 0;
-    color: black;
-    font-weight: 700;
-    font-size: 17px;
-    letter-spacing: 1px;
-    border-bottom: 1px lightgray solid;
-    padding: 10px;
+  margin: 0;
+  color: black;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 1px;
+  border-bottom: 1px lightgray solid;
+  padding: 10px;
+}
+
+main aside .history div:hover {
+  background-color: #efefef;
 }
 
 main section {
-    flex: 1 0 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: white;
-    padding: 20px;
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  padding: 20px;
 }
 
 main section h2 {
-    font-size: 30px;
-    font-weight: 800;
+  font-size: 30px;
+  font-weight: 800;
 }
 
 main section article {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    /* text-align: left; */
-    border: 2px lightgray solid;
-    border-radius: 5px;
-    padding: 20px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* text-align: left; */
+  border: 2px lightgray solid;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
 }
 
 main section article h2 {
-    font-size: 30px;
-    font-weight: 800;
-    letter-spacing: 1px;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
 main section article span {
-    padding: 10px;
+  padding: 10px;
 }
 
 main section .card-cont {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    /* border: 2px red solid; */
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* border: 2px red solid; */
+  width: 100%;
 }
 
 main section .card {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    border: 2px grey solid;
-    border-radius: 5px;
-    background-color: var(--blue-clr);
-    color: var(--light-text-clr);
-    padding: 10px;
-    margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border: 2px grey solid;
+  border-radius: 5px;
+  background-color: var(--blue-clr);
+  color: var(--light-text-clr);
+  padding: 10px;
+  margin-right: 15px;
 }
 
 main section .card h3 {
-    font-size: 20px;
-    font-weight: 800;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 main section .card span {
-    font-size: 15px;
-    letter-spacing: 1px;
-    padding: 5px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 5px;
 }
 
 footer {
-    position: absolute;
-    background-color: var(--dark-clr);
-    color: var(--light-text-clr);
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    bottom: 0;
+  position: absolute;
+  background-color: var(--dark-clr);
+  color: var(--light-text-clr);
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
 }
