@@ -142,6 +142,7 @@ main section .card {
   color: var(--light-text-clr);
   padding: 10px;
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 main section .card h3 {
@@ -155,6 +156,24 @@ main section .card span {
   padding: 5px;
 }
 
+.green {
+  background-color: green;
+  color: azure;
+  border-radius: 20px;
+}
+
+.yellow {
+  background-color: yellow;
+  color: black;
+  border-radius: 20px;
+}
+
+.red {
+  background-color: red;
+  color: azure;
+  border-radius: 20px;
+}
+
 footer {
   position: absolute;
   background-color: var(--dark-clr);
@@ -163,4 +182,11 @@ footer {
   text-align: center;
   padding: 20px;
   bottom: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
 }

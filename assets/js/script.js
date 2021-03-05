@@ -59,8 +59,24 @@ function displayHistory(event) {
   });
 }
 
+// sets the uv index value to the current weather
+function uvIndex(uv) {
+  var uIndex = resultsEl.children().eq(0).children().eq(4);
+  var colorIndex = $("<span></span>");
+  colorIndex.text(uv);
+  if(uv > 0 && uv < 3) {
+    colorIndex.addClass("green");
+  } else if(uv > 3 && uv < 6) {
+    colorIndex.addClass("yellow");
+  } else {
+    colorIndex.addClass("red");
+  }
+  uIndex.append(colorIndex);
+}
+
 // after recieving data from second fetch call it will render the 5 day forecast to DOM
 function fiveDay(test) {
+  uvIndex(test.daily[0].uvi);
   // Create card container for 5 day forecast and append it to DOM
   var cardCont = $("<div id='card-container' class='card-cont'></div>");
   resultsEl.append(cardCont);
