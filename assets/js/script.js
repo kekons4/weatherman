@@ -8,7 +8,7 @@ var historyEl = $("#history");
 var APIKEY = "eaa68d3df89c0a3c155a63bf91e7807d";
 var cnt = "6";
 var units = "imperial";
-var apiBaseUrl = "http://api.openweathermap.org/data/2.5/forecast?q=";
+var apiBaseUrl = "https://api.openweathermap.org/data/2.5/forecast?q=";
 
 // localStorage initialization and checking
 var savedHistory = [];
@@ -89,7 +89,7 @@ function fiveDay(test) {
     titleDate.text(moment.unix(test.daily[i].dt).format("M/DD/YYYY"));
     //current cloudy conditions icon
     var image = $(
-      "<img id='wicon' src='http://openweathermap.org/img/w/" +
+      "<img id='wicon' src='https://openweathermap.org/img/w/" +
         test.daily[i].weather[0].icon +
         ".png' alt='Weather icon'></img>"
     );
@@ -130,7 +130,7 @@ function displayWeather(data) {
 
   // icon img of the current weather in city
   var img = $(
-    "<img id='wicon' src='http://openweathermap.org/img/w/" +
+    "<img id='wicon' src='https://openweathermap.org/img/w/" +
       data.list[0].weather[0].icon +
       ".png' alt='Weather icon'></img>"
   );
